@@ -2,22 +2,22 @@ import numpy as np
 import pandas as pd
 
 def simulate_portfolio_paths(portfolio_weights, historical_returns, num_simulations, T, steps):
-    """
-    Simulate portfolio value paths over a time horizon T using geometric Brownian motion.
     
-    Parameters:
-    - portfolio_weights: array-like, shape (n_assets,)
-    - historical_returns: DataFrame or ndarray of shape (n_periods, n_assets)
-    - num_simulations: number of Monte Carlo simulation paths
-    - T: time horizon in years
-    - steps: number of discrete time steps in T (e.g. 252 for daily over one year)
+#    Simulate portfolio value paths over a time horizon T using geometric Brownian motion.
     
-    Returns:
-    - paths: NumPy array of shape (num_simulations, steps+1) with simulated portfolio values
-    - dt: time step size
-    - portfolio_drift: estimated drift of the portfolio
-    - portfolio_volatility: estimated volatility of the portfolio
-    """
+#    Parameters:
+#    - portfolio_weights: array-like, shape (n_assets,)
+#    - historical_returns: DataFrame or ndarray of shape (n_periods, n_assets)
+#    - num_simulations: number of Monte Carlo simulation paths
+#    - T: time horizon in years
+#    - steps: number of discrete time steps in T (e.g. 252 for daily over one year)
+    
+#    Returns:
+#    - paths: NumPy array of shape (num_simulations, steps+1) with simulated portfolio values
+#    - dt: time step size
+#    - portfolio_drift: estimated drift of the portfolio
+#    - portfolio_volatility: estimated volatility of the portfolio
+    
     # Ensure historical returns is a NumPy array
     if isinstance(historical_returns, pd.DataFrame):
         returns = historical_returns.values
